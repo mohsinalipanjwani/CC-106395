@@ -5,7 +5,7 @@ ROJECT MEMBERS
 StdID | Name
 ------------ | -------------
 62008| **MOHSIN ALI**
-61913| **SHINAL SHAFQAT**
+60788| **SHINAL SHAFQAT**
 
 ## Description ##
 
