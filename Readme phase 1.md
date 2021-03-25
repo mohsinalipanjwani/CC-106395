@@ -1,5 +1,5 @@
 #CC Spring 2021: Project Phase 1#
-###PROJECT MEMBERS###
+##PROJECT MEMBERS##
 StdID | Name
 ------------ | -------------
 **60788** | **Shinal Shafqat** <!--this is the group leader in bold-->
@@ -46,7 +46,7 @@ int main ()
   }
 }
 
-# Lexical Specification#
+# Lexical Specification
 
 SINGLE_COMMENT \/\/.+
     MULTI_COMMENT \/\*(.|\n)*?\\*\/ ?
