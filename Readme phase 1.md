@@ -23,7 +23,7 @@ or or many of the low level operators
 The only data types permitted:
 int
 float
-# This is a Sample program in mini c```
+# This is a Sample program in mini c
 int main ()
 {
   float cos, x, n, term, eps, alt;
@@ -45,7 +45,6 @@ int main ()
     n = n + 2;
   }
 }
-```
 
 # Lexical Specification#
 
@@ -63,7 +62,7 @@ Arg           ->  Type identifier
 Declaration   ->  Type IdentList ;
 Type          ->  int
                   | float
-                 
+                  
 # Context free grammar example
 
 program -> decl_list
@@ -158,6 +157,34 @@ expr'''' -> expr''' expr''''
 args -> arg_list | ϵ
 arg_list -> expr arg_list'
 arg_list' -> , expr arg_list' | ϵ
-
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                 
 
                   
