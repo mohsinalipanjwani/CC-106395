@@ -62,3 +62,11 @@ Arg           ->  Type identifier
 Declaration   ->  Type IdentList ;
 Type          ->  int
                   | float
+
+##Problems Faced##
+
+###Problem 1: First time using mini C or mini java###
+At initial stage it was difficult for us to understand these language and making project in these language was the hardest part.but by the time we understand some basics which help us and then we are able to make small project in it. although it was diffucult but some how we manage to do so.
+
+###Problem 1: Small Community###
+It was difficult for us to find help from internet as both of the language have small user community over other languages which are popular now
