@@ -68,5 +68,9 @@ Type          ->  int
 ### Problem 1: First time using mini C or mini java ###
 At initial stage it was difficult for us to understand these language and making project in these language was the hardest part.but by the time we understand some basics which help us and then we are able to make small project in it. although it was diffucult but some how we manage to do so.
 
-### Problem 1: Small Community ###
+### Problem 2: Small Community ###
 It was difficult for us to find help from internet as both of the language have small user community over other languages which are popular now
+## Refrences
+https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.thecrazyprogrammer.com%2F2017%2F02%2Flexical-analyzer-in-c.html%3Ffbclid%3DIwAR0EDfAEL3YyDEpOa8Qn9hoBp_fxycCmgae_Xo6WAPxRDefyitkBCAk5Vuc&h=AT3pwwSMpEEpbGYtFASOUS4VLiBApv1tYL0uXp4Xp3OVgf-qEK7VCF9nSDTF5HJBP_Kh5JM26GE84x2uDGN0-camr6xuKG0NYnHSRQpUTnoGkWEreDkG9b6VkjhQySLeKpmX4agw-_tQ9f4M7POOOg
+http://jamesvanboxtel.com/projects/minic-compiler/minic.pdf
+
