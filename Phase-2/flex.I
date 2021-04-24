@@ -22,3 +22,16 @@ hex [0-9a-f]
 %x PREPROC
 
 %%
+/* Keywords*/
+"int"                             {printf("\t%-30s : %3d\n",yytext,INT);}
+"long"                            {printf("\t%-30s : %3d\n",yytext,LONG);}
+"long long"                       {printf("\t%-30s : %3d\n",yytext,LONG_LONG);}
+"short"                           {printf("\t%-30s : %3d\n",yytext,SHORT);}
+"signed"                          {printf("\t%-30s : %3d\n",yytext,SIGNED);}
+"unsigned"                        {printf("\t%-30s : %3d\n",yytext,UNSIGNED);}
+"for"                             {printf("\t%-30s : %3d\n",yytext,FOR);}
+"break"                           {printf("\t%-30s : %3d\n",yytext,BREAK);}
+"continue"                        {printf("\t%-30s : %3d\n",yytext,CONTINUE);}
+"if"                              {printf("\t%-30s : %3d\n",yytext,IF);}
+"else"                            {printf("\t%-30s : %3d\n",yytext,ELSE);}
+"return"                          {printf("\t%-30s : %3d\n",yytext,RETURN);}
