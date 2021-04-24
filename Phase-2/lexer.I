@@ -67,4 +67,49 @@ hex [0-9a-f]
   else
   insert( constant_table,yytext,STRING);
  }
+\"[^\"\n]*$                     {printf("Line %3d: Unterminated string %s\n",yylineno,yytext);}
+{digit}+({letter}|_)+	        {printf("Line %3d: Illegal identifier name %s\n",yylineno,yytext);}
+\n                              {yylineno++;}
+"--"			                {printf("\t%-30s : %3d\n",yytext,DECREMENT);}
+"++"			                {printf("\t%-30s : %3d\n",yytext,INCREMENT);}
+"->"			                {printf("\t%-30s : %3d\n",yytext,PTR_SELECT);}
+"&&"			                {printf("\t%-30s : %3d\n",yytext,LOGICAL_AND);}
+"||"			                {printf("\t%-30s : %3d\n",yytext,LOGICAL_OR);}
+"<="			                {printf("\t%-30s : %3d\n",yytext,LS_THAN_EQ);}
+">="			                {printf("\t%-30s : %3d\n",yytext,GR_THAN_EQ);}
+"=="			                {printf("\t%-30s : %3d\n",yytext,EQ);}
+"!="		                    {printf("\t%-30s : %3d\n",yytext,NOT_EQ);}
+";"			                    {printf("\t%-30s : %3d\n",yytext,DELIMITER);}
+"{"                             {printf("\t%-30s : %3d\n",yytext,OPEN_BRACES);}
+"}"                             {printf("\t%-30s : %3d\n",yytext,CLOSE_BRACES);}
+","			                    {printf("\t%-30s : %3d\n",yytext,COMMA);}
+"="			                    {printf("\t%-30s : %3d\n",yytext,ASSIGN);}
+"("			                    {printf("\t%-30s : %3d\n",yytext,OPEN_PAR);}
+")"			                    {printf("\t%-30s : %3d\n",yytext,CLOSE_PAR);}
+"["                             {printf("\t%-30s : %3d\n",yytext,OPEN_SQ_BRKT);}
+"]"                             {printf("\t%-30s : %3d\n",yytext,CLOSE_SQ_BRKT);}
+"-"			                    {printf("\t%-30s : %3d\n",yytext,MINUS);}
+"+"			                    {printf("\t%-30s : %3d\n",yytext,PLUS);}
+"*"			                    {printf("\t%-30s : %3d\n",yytext,STAR);}
+"/"		                        {printf("\t%-30s : %3d\n",yytext,FW_SLASH);}
+"%"			                    {printf("\t%-30s : %3d\n",yytext,MODULO);}
+"<"			                    {printf("\t%-30s : %3d\n",yytext,LS_THAN);}
+">"			                    {printf("\t%-30s : %3d\n",yytext,GR_THAN);}
+.                               {printf("Line %3d: Illegal character %s\n",yylineno,yytext);}
+
+%%
+
+int main()
+{
+  yyin=fopen("testcases/test-case-5.c","r");
+  symbol_table=create_table();
+  constant_table=create_table();
+  yylex();
+  printf("\n\tSymbol table");
+  display(symbol_table);
+  printf("\n\tConstants Table");
+  display(constant_table);
+  printf("NOTE: Please refer tokens.h for token meanings\n");
+}
+
 
